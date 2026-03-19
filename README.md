@@ -140,6 +140,40 @@ flowchart TD
     K --> L[Payout to Worker]
 ```
 
+  ## Microservices Architecture
+
+  ```mermaid
+  flowchart TD
+    A[Client Apps] --> B[API Gateway]
+
+    B --> C1[User Service]
+    B --> C2[Policy Service]
+    B --> C3[Claim Service]
+    B --> C4[Trigger Monitoring Service]
+    B --> C5[Fraud Detection Service]
+    B --> C6[Notification Service]
+
+    C4 --> D[Event Bus]
+
+    D --> E1[Weather API]
+    D --> E2[AQI API]
+    D --> E3[Platform Signals]
+
+    D --> F[AI Risk Engine]
+
+    F --> G[Premium Calculator]
+
+    C3 --> H[Claim Processor]
+
+    H --> I[Payment Service]
+
+    I --> J[UPI / Razorpay]
+
+    C5 --> K[Anomaly Detection Model]
+
+    D --> L[Analytics Engine]
+  ```
+
 ---
 
 # 10. AI/ML Integration
