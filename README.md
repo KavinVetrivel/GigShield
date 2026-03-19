@@ -460,6 +460,3 @@ Structured as **index-based parametric coverage** under IRDAI's Regulatory Sandb
 ---
 
 *GigShield — Protect the people who deliver India's digital economy.*
-
-**Repository:** https://github.com/[team]/gigshield  
-**Demo Video (Phase 1):** [To be added by March 20]
